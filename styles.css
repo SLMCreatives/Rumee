@@ -2,6 +2,12 @@
     margin: 0 ;
     padding: 0 1em;
     box-sizing: border-box;
+    scroll-behavior:smooth;
+
+}
+
+:root {
+
 }
 
 body {
@@ -16,6 +22,7 @@ body {
     align-items: center;
     justify-content: top;
     text-align: center;
+    scroll-behavior:smooth;
 }
 
 h1 {
