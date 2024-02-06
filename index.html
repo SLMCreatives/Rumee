@@ -18,7 +18,7 @@
 </section>
     <section class="hero">
         <div class="container hero-container">
-            <h3>35 hari ke Ramadan!</h3>
+            <h3 id="days">00 Hari Ke Ramadan 2024</h3>
             <a href="#kr24">#ramadhancalendar</a>
         </div>
     </section>
@@ -40,25 +40,24 @@
 
     <section>
         <div class="container">
-            <h3>Kebaikan Kalendar Ramadhan</h3>
-            <ol>
-                <li>Tingkatkan semangat berpuasa dalam kanak-kanak</li>
-                <li>Mendorong anak berpuasa penuh di bulan Ramadan</li>
-                <li>Rekod kemajuan puasa tahunan kanak-kanak</li>
-            </ol>
-            <a href="#bayar">Tempah Sekarang</a>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <h3>Cara Guna Kalendar Ramadhan</h3>
-            <ol>
-                <li>Tuliskan nama dan umur pada tracker ramadhan</li>
-                <li>Tampal tracker pada peti sejuk dan rekodkan puasa anak anda</li>
-                <li>Tebuk tarikh pada kalendar untuk dapatkan hadiah istimewa</li>
-            </ol>
-            <a href="#bayar">Tempah Sekarang</a>
-
+            <div class="tab">
+                <h3>Kebaikan Kalendar Ramadhan</h3>
+                <ol>
+                    <li>Tingkatkan semangat berpuasa dalam kanak-kanak</li>
+                    <li>Mendorong anak berpuasa penuh di bulan Ramadan</li>
+                    <li>Rekod kemajuan puasa tahunan kanak-kanak</li>
+                </ol>
+            </div>
+            <br>
+            <div class="tab">
+                <h3>Cara Guna Kalendar Ramadhan</h3>
+                <ol>
+                    <li>Tuliskan nama dan umur pada tracker ramadhan</li>
+                    <li>Tampal tracker pada peti sejuk dan rekodkan puasa anak anda</li>
+                    <li>Tebuk tarikh pada kalendar untuk dapatkan hadiah istimewa</li>
+                </ol>
+            </div>
+            
         </div>
     </section>
 
@@ -66,13 +65,15 @@
     <section>
         <div class="container pilihan" id="bayar">
             <h3>2 Pilihan Isi Kalendar</h3>
+            <h2>#KR24</h2>
 
             <div class="card">
                <ul id="sweets"> 
-                <span>Set Coklat #KR24</span>
+                
+                <span>Set Gula-Gula</span>
 
                 <p>
-                    30 Coklat<br>
+                    30 Gula-Gula<br>
                     1 Tracker Puasa</p>
                     <br>
                     <h5>Tempah Sekarang:</h5>
@@ -82,10 +83,10 @@
                    <button onclick="window.location.href='https://buy.stripe.com/6oEeVYbK4bR9bYcaEU';">FPX / Kad / GrabPay</button>  
                 </ul>
                <ul id="toys"> 
-                <span>Set Permainan #KR24</span>
+                <span>Set Mainan</span>
 
                 <p>
-                    30 Permainan <br>
+                    30 Mainan <br>
                     1 Tracker Puasa</p>
                     <br>
                     <h5>Tempah Sekarang:</h5>
@@ -95,17 +96,42 @@
                    <button onclick="window.location.href='https://buy.stripe.com/eVag029BWf3lfao6oD';">FPX / Kad / GrabPay</button>  
                 </ul>
 
-        </div>  <p><em>Penghantaran Batch #1 bermula pada 1 Mac 2024.</em></p>
+        </div>
         
-    </div>
-</section>
+        <p><em>Penghantaran Batch #1 bermula pada 1 Mac 2024.</em></p>
+
+        <p>Bagi tempahan lebih 10 unit, sila hubungi <a href="tel:+601121292383">+601121292383</a> atau <a href="mailto:rumeemylife@gmail.com">rumeemylife@gmail.com</a></p>
+
+    </section>
 
 <footer>
-    <img src="images/logo.png" alt="logo" class="footer-logo">
-    <p>Copyright © 2024 Rumee. All Rights Reserved</p>
-    <p>Bagi tempahan lebih 10 unit, sila hubungi <a href="tel:+601121292383">+601121292383</a> atau <a href="mailto:rumeemylife@gmail.com">rumeemylife@gmail.com</a></p>
+    <p>Copyright © 2024 <a href="https://rumee.life">Rumee.</a> All rights reserved. Made by <a href="https://slmcreatives.com">SLM Creatives</a></p>
     
 </footer>
 
 </body>
+
+<script>
+    var countDownDate = new Date("March 12, 2024 00:00:00").getTime();
+
+// Run myfunc every second
+var myfunc = setInterval(function() {
+
+var now = new Date().getTime();
+var timeleft = countDownDate - now;
+    
+// Calculating the days, hours, minutes and seconds left
+var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+    
+// Result is output to the specific element
+document.getElementById("days").innerHTML = days + " Hari Ke Ramadan 2024";
+
+    
+// Display the message when countdown is over
+if (timeleft < 0) {
+    clearInterval(myfunc);
+    document.getElementById("days").innerHTML = ""
+}
+}, 1000);
+</script>
 </html>
