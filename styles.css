@@ -31,7 +31,7 @@ h1 {
 
 h2 {
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 500;
     text-transform: uppercase;
     background-color: rgb(228, 204, 69,0.2) ;
     color: #333;
@@ -58,6 +58,7 @@ a {
     color: rgb(228, 204, 69);
     text-decoration: none;
     font-size: 1rem;
+    margin: 10px -10px;
 }
 
 .container {
@@ -152,11 +153,6 @@ span:hover {
     color: rgb(228, 204, 69);
 }
 
-.cats {
-    height: 40px;
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-}
 
 .card {
     width: 100%;
@@ -207,14 +203,7 @@ span:hover {
 
 }
 
-.pilihan {
-    height: 80vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .footer-logo {
     height: 100px;
@@ -244,11 +233,10 @@ footer p, footer a {
 }
 
 .card p, .card s {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     
 }
 
 .alerts p, .alerts a {
-    font-size: 0.7rem;
-    
+    font-size: 0.9rem;
 }
