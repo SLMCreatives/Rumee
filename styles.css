@@ -257,8 +257,16 @@ span:hover {
     padding: 2em;
     background-color: #eee;
     color: #333;
+    min-height: 380px;
+}
+
+#sweets h2, #toys h2 {
+    font-size: 1.3rem;
+    padding: 0;
+    margin-bottom: -20px;
 
 }
+
 
 
 
