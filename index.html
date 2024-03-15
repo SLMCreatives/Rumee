@@ -45,9 +45,7 @@
 </div>
 </section>
 <section class="hero">
-    <div class="container hero-container">
-        <h3 id="days">00 Hari Ke Ramadan</h3>
-    </div>
+<hr>
     </section>
 
     <section class="features kr24" id="kr24">
@@ -110,8 +108,8 @@
                     30 Mainan + Gula-gula + <br>
                     1 Tracker Puasa</p>
                     <br>
-                    <h2>Harga: RM 70</h2><br>
-                   <button onclick="window.location.href='https://buy.stripe.com/5kA7tw8xSdZhges4gy';">Tempah Kalendar Ramadan</button>  
+                    <s>Harga: RM 70</s><br>
+                   <button>SOLD OUT!</button>  
                    <small>FPX, Kad atau GrabPay</small>
 
                 </ul>
@@ -123,6 +121,7 @@
         </div>
 
     </section>
+    
 
 <footer>
     <p>Copyright © 2024 <a href="https://rumee.life">Rumee.</a> | Made by <a href="https://slmcreatives.com">SLM Creatives</a></p>
@@ -131,27 +130,4 @@
 
 </body>
 
-<script>
-    var countDownDate = new Date("March 12, 2024 00:00:00").getTime();
-
-// Run myfunc every second
-var myfunc = setInterval(function() {
-
-var now = new Date().getTime();
-var timeleft = countDownDate - now;
-    
-// Calculating the days, hours, minutes and seconds left
-var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-    
-// Result is output to the specific element
-document.getElementById("days").innerHTML = days + " Hari Ke Ramadan";
-
-    
-// Display the message when countdown is over
-if (timeleft < 0) {
-    clearInterval(myfunc);
-    document.getElementById("days").innerHTML = ""
-}
-}, 1000);
-</script>
 </html>
